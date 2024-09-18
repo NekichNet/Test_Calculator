@@ -43,5 +43,18 @@ int main() {
 		std::cout << "Неизвестный оператор!";
 	}
 
+	// Второе задание
+
+	int number;
+	int first_digit;
+
+	std::cout << "\nВведите число: ";
+	std::cin >> number;
+
+	first_digit = number / 10;
+	number = (number - first_digit * 10) * 10 + first_digit;
+
+	std::cout << "Переставленные цифры: " << number;
+
 	return 0;
 }
